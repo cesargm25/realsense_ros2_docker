@@ -1,6 +1,0 @@
-Invoking command in '/ws_moveit/build/robotiq_2f_gripper_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ws_moveit/src/robotiq_2f_gripper_ros2/robotiq_2f_gripper_msgs -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/ws_moveit/install/robotiq_2f_gripper_msgs
-Invoked command in '/ws_moveit/build/robotiq_2f_gripper_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ws_moveit/src/robotiq_2f_gripper_ros2/robotiq_2f_gripper_msgs -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/ws_moveit/install/robotiq_2f_gripper_msgs
-Invoking command in '/ws_moveit/build/robotiq_2f_gripper_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws_moveit/build/robotiq_2f_gripper_msgs -- -j12 -l12
-Invoked command in '/ws_moveit/build/robotiq_2f_gripper_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws_moveit/build/robotiq_2f_gripper_msgs -- -j12 -l12
-Invoking command in '/ws_moveit/build/robotiq_2f_gripper_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws_moveit/build/robotiq_2f_gripper_msgs
-Invoked command in '/ws_moveit/build/robotiq_2f_gripper_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws_moveit/build/robotiq_2f_gripper_msgs

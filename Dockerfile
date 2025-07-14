@@ -101,7 +101,10 @@ RUN apt-get install -y \
     ros-humble-eigen-stl-containers \
     ros-humble-random-numbers \
     ros-humble-moveit-common \
-    ros-humble-nav2-bringup
+    ros-humble-nav2-bringup 
+
+RUN apt-get update && apt-get install -y iputils-ping
+
 
 RUN apt-get update && apt-get install -y ros-humble-ur-client-library \
                    ros-humble-moveit-servo \
@@ -127,44 +130,39 @@ RUN apt-get update && apt-get install -y ros-humble-ur-client-library \
                    ros-humble-gazebo-ros2-control \
                    ros-humble-ament-clang-format \
                    ros-humble-ament-clang-tidy
-    
-# Initialize rosdep
-RUN rosdep init && rosdep update
 
-# Create workspace and download MoveIt 2 source code
-#RUN mkdir -p ~/ws_moveit/src
-#VOLUME ~/ws_moveit
-#
-#RUN cd ~/ws_moveit/src && \
-#    git clone -b humble https://github.com/moveit/moveit2_tutorials && \
-#    vcs import --recursive < moveit2_tutorials/moveit2_tutorials.repos 
-#
-## Install dependencies for workspace
-#RUN cd ~/ws_moveit &&  \
-#    sudo apt update && \
-#    rosdep install -r --from-paths . --ignore-src --rosdistro humble -y
+RUN apt-get update && apt-get install -y yamllint \
+                   ros-humble-ros2-control \
+                   ros-humble-ros2-controllers \
+                   gazebo \
+                   ros-humble-gazebo-ros2-control \
+                   ros-humble-gazebo-ros-pkgs \
+                   ros-humble-xacro\
+                   ros-humble-rmw-cyclonedds-cpp \
+                   ros-humble-sensor-msgs
 
 # Install packages for UR robots
-#RUN sudo apt update && \
-#    sudo apt install -y ros-humble-ur-client-library && \  
-#    sudo apt install -y ros-humble-ur 
-#    
-#RUN apt-get update && apt-get install -y \
-#    ros-humble-ur-bringup \
-#    ros-humble-ur-description \                     THIS MUST BE ELIMINATED 
-#    ros-humble-ur-controllers
+RUN sudo apt update && \
+    sudo apt install -y ros-humble-ur-client-library && \
+    sudo apt install -y ros-humble-ur
 
-#RUN cd ~/ws_moveit/src && \
-#    git clone -b humble https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git
-#RUN cd ~/ws_moveit/src && \
-#    git clone -b humble https://github.com/UniversalRobots/Universal_Robots_ROS2_Gazebo_Simulation.git
+# Realsense commands 
 
-#RUN cd ~/ws_moveit/src && \
-#    git clone https://github.com/jannishaberhausen/robotiq_2f_gripper_ros2.git && \
-#    cd robotiq_2f_gripper_ros2 && \
-#    git submodule update --init --recursive
-#
+RUN mkdir -p /etc/apt/keyrings && \
+    curl -sSf https://librealsense.intel.com/Debian/librealsense.pgp | tee /etc/apt/keyrings/librealsense.pgp > /dev/null && \
+    apt-get update && \
+    apt-get install -y apt-transport-https && \
+    echo "deb [signed-by=/etc/apt/keyrings/librealsense.pgp] https://librealsense.intel.com/Debian/apt-repo $(lsb_release -cs) main" | tee /etc/apt/sources.list.d/librealsense.list && \
+    apt-get update && \
+    apt-get install -y librealsense2-utils librealsense2-dev && \
+    apt-get update && apt-get upgrade -y && \
+    apt-get install -y python3-rosdep && \
+    rosdep init && \
+    rosdep update
+
 ## Build the Colcon Workspace with proper sourcing
+## NECESSARY RUN THIS COMMAND ON WS_MOVEIT (Command below)
+##  rosdep install -i --from-path src --rosdistro $ROS_DISTRO --skip-keys=librealsense2 -y
 #RUN /bin/bash -c "source /opt/ros/humble/setup.bash && \
 #    cd ~/ws_moveit && \
 #    colcon build --mixin release --executor sequential"

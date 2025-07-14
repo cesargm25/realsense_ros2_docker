@@ -1,0 +1,6 @@
+Invoking command in '/ws_moveit/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ws_moveit/src/realsense-ros/realsense2_camera_msgs -DCMAKE_INSTALL_PREFIX=/ws_moveit/install/realsense2_camera_msgs
+Invoked command in '/ws_moveit/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ws_moveit/src/realsense-ros/realsense2_camera_msgs -DCMAKE_INSTALL_PREFIX=/ws_moveit/install/realsense2_camera_msgs
+Invoking command in '/ws_moveit/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws_moveit/build/realsense2_camera_msgs -- -j12 -l12
+Invoked command in '/ws_moveit/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws_moveit/build/realsense2_camera_msgs -- -j12 -l12
+Invoking command in '/ws_moveit/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws_moveit/build/realsense2_camera_msgs
+Invoked command in '/ws_moveit/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws_moveit/build/realsense2_camera_msgs

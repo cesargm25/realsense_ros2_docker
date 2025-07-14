@@ -1,8 +1,6 @@
 /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur_controllers.yaml
 /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_moveit.launch.py
-/ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/gazebo_test1.launch.py
 /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_control.launch.py
-/ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_cesar_control.launch.py
 /ws_moveit/install/ur_simulation_gazebo/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo
 /ws_moveit/install/ur_simulation_gazebo/share/ament_index/resource_index/parent_prefix_path/ur_simulation_gazebo
 /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.sh

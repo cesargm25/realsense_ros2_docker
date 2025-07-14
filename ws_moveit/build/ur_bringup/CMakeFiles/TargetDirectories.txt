@@ -1,9 +1,0 @@
-/ws_moveit/build/ur_bringup/CMakeFiles/uninstall.dir
-/ws_moveit/build/ur_bringup/CMakeFiles/ur_bringup_uninstall.dir
-/ws_moveit/build/ur_bringup/CMakeFiles/test.dir
-/ws_moveit/build/ur_bringup/CMakeFiles/edit_cache.dir
-/ws_moveit/build/ur_bringup/CMakeFiles/rebuild_cache.dir
-/ws_moveit/build/ur_bringup/CMakeFiles/list_install_components.dir
-/ws_moveit/build/ur_bringup/CMakeFiles/install.dir
-/ws_moveit/build/ur_bringup/CMakeFiles/install/local.dir
-/ws_moveit/build/ur_bringup/CMakeFiles/install/strip.dir

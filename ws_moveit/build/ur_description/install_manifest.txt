@@ -47,8 +47,6 @@
 /ws_moveit/install/ur_description/share/ur_description/config/ur7e/default_kinematics.yaml
 /ws_moveit/install/ur_description/share/ur_description/config/ur7e/visual_parameters.yaml
 /ws_moveit/install/ur_description/share/ur_description/config/ur7e/joint_limits.yaml
-/ws_moveit/install/ur_description/share/ur_description/launch/gripper_view_ur.launch.py
-/ws_moveit/install/ur_description/share/ur_description/launch/gazebo_test1.launch.py
 /ws_moveit/install/ur_description/share/ur_description/launch/view_ur.launch.py
 /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/visual/wrist3.dae
 /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/visual/wrist1.dae
@@ -180,11 +178,8 @@
 /ws_moveit/install/ur_description/share/ur_description/urdf/ur.urdf.xacro
 /ws_moveit/install/ur_description/share/ur_description/urdf/ur_macro.xacro
 /ws_moveit/install/ur_description/share/ur_description/urdf/ur.ros2_control.xacro
-/ws_moveit/install/ur_description/share/ur_description/urdf/ur_ur3e_gripper.urdf.xacro
-/ws_moveit/install/ur_description/share/ur_description/urdf/ur_gripper.urdf.xacro
 /ws_moveit/install/ur_description/share/ur_description/urdf/inc/ur_common.xacro
 /ws_moveit/install/ur_description/share/ur_description/urdf/inc/ur_transmissions.xacro
-/ws_moveit/install/ur_description/share/ur_description/urdf/gripper_union.xacro
 /ws_moveit/install/ur_description/share/ur_description/test/test_view_ur_launch.py
 /ws_moveit/install/ur_description/share/ur_description/test/test_ur_urdf_xacro.py
 /ws_moveit/install/ur_description/share/ament_index/resource_index/package_run_dependencies/ur_description
